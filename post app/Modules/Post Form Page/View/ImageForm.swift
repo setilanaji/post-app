@@ -30,7 +30,7 @@ public class ImageForm: NiblessTableViewCell {
     private lazy var deleteButton: UIImageView = {
         let imageView = UIImageView(image: UIImage(systemName: "xmark.circle.fill")?.withTintColor(.label, renderingMode: .alwaysOriginal))
         imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.deleteImage(_:))))
-        imageView.backgroundColor = .white
+        imageView.backgroundColor = .systemFill
         imageView.layer.cornerRadius = 16
         return imageView
     }()
