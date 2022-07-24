@@ -7,23 +7,134 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9017416B288A2C4F00136B70 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9017416A288A2C4F00136B70 /* Repository.swift */; };
+		9017416D288A2CD900136B70 /* GetPostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9017416C288A2CD900136B70 /* GetPostRepository.swift */; };
+		90174170288A2D5000136B70 /* PostMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9017416F288A2D5000136B70 /* PostMapper.swift */; };
+		90174172288A2D6E00136B70 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90174171288A2D6E00136B70 /* Mapper.swift */; };
+		90174175288A300C00136B70 /* UserMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90174174288A300C00136B70 /* UserMapper.swift */; };
+		90174177288A336500136B70 /* PostsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90174176288A336500136B70 /* PostsMapper.swift */; };
+		90174179288A38F800136B70 /* GetPostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90174178288A38F800136B70 /* GetPostsRepository.swift */; };
+		9017417E288A3C5700136B70 /* PostPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9017417D288A3C5700136B70 /* PostPagePresenter.swift */; };
+		90174180288A3CA100136B70 /* PostPageContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9017417F288A3CA100136B70 /* PostPageContract.swift */; };
+		90174182288A3DAB00136B70 /* PostPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90174181288A3DAB00136B70 /* PostPageInteractor.swift */; };
+		90174184288A427200136B70 /* PostPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90174183288A427200136B70 /* PostPageRouter.swift */; };
+		90174189288A492400136B70 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90174188288A492400136B70 /* NiblessViewController.swift */; };
+		9017418B288A494800136B70 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9017418A288A494800136B70 /* NiblessView.swift */; };
+		9017418D288A49C800136B70 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9017418C288A49C800136B70 /* NiblessNavigationController.swift */; };
+		9017418F288A4AB700136B70 /* NiblessCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9017418E288A4AB700136B70 /* NiblessCollectionViewCell.swift */; };
+		90174191288A4B9300136B70 /* PostPageNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90174190288A4B9300136B70 /* PostPageNavigationController.swift */; };
+		90174194288A4D2900136B70 /* PostPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90174193288A4D2900136B70 /* PostPageViewController.swift */; };
+		90174196288A530100136B70 /* PostPageViewRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90174195288A530100136B70 /* PostPageViewRoot.swift */; };
+		90174198288A53C400136B70 /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90174197288A53C400136B70 /* PostViewCell.swift */; };
 		90630D972889D95800F27884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90630D962889D95800F27884 /* AppDelegate.swift */; };
-		90630D992889D95800F27884 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90630D982889D95800F27884 /* SceneDelegate.swift */; };
-		90630D9B2889D95800F27884 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90630D9A2889D95800F27884 /* ViewController.swift */; };
-		90630D9E2889D95800F27884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90630D9C2889D95800F27884 /* Main.storyboard */; };
 		90630DA02889D95B00F27884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90630D9F2889D95B00F27884 /* Assets.xcassets */; };
 		90630DA32889D95B00F27884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90630DA12889D95B00F27884 /* LaunchScreen.storyboard */; };
+		90630DAF2889DC1D00F27884 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 90630DAE2889DC1D00F27884 /* RealmSwift */; };
+		90630DB42889DE2500F27884 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90630DB32889DE2500F27884 /* UserModel.swift */; };
+		90630DB62889DE3100F27884 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90630DB52889DE3100F27884 /* PostModel.swift */; };
+		90630DBA2889DF5D00F27884 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90630DB92889DF5D00F27884 /* UserEntity.swift */; };
+		90630DBC2889DF6A00F27884 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90630DBB2889DF6A00F27884 /* PostEntity.swift */; };
+		90630DBE2889E14100F27884 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90630DBD2889E14100F27884 /* LocalDataSource.swift */; };
+		90630DC02889E2A900F27884 /* PostLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90630DBF2889E2A900F27884 /* PostLocalDataSource.swift */; };
+		90630DC32889E3FD00F27884 /* CustomError+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90630DC22889E3FD00F27884 /* CustomError+Ext.swift */; };
+		90630DC52889E51B00F27884 /* Result+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90630DC42889E51B00F27884 /* Result+Ext.swift */; };
+		9098796E288AD7820003E0F3 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098796D288AD7820003E0F3 /* Injection.swift */; };
+		90987970288AECF20003E0F3 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098796F288AECF20003E0F3 /* RootRouter.swift */; };
+		90987972288B459E0003E0F3 /* PostFormPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90987971288B459E0003E0F3 /* PostFormPagePresenter.swift */; };
+		90987974288B45AF0003E0F3 /* PostFormPageContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90987973288B45AF0003E0F3 /* PostFormPageContract.swift */; };
+		90987976288B45C30003E0F3 /* PostFormPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90987975288B45C30003E0F3 /* PostFormPageInteractor.swift */; };
+		90987978288B45E30003E0F3 /* PostFormPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90987977288B45E30003E0F3 /* PostFormPageRouter.swift */; };
+		9098797B288B45F90003E0F3 /* PostFormPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098797A288B45F90003E0F3 /* PostFormPageController.swift */; };
+		9098797D288B46090003E0F3 /* PostFormPageViewRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098797C288B46090003E0F3 /* PostFormPageViewRoot.swift */; };
+		9098797F288B4B8E0003E0F3 /* AddPostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098797E288B4B8E0003E0F3 /* AddPostRepository.swift */; };
+		90987984288C1B0B0003E0F3 /* UserDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90987983288C1B0B0003E0F3 /* UserDataStore.swift */; };
+		90987986288C1C7E0003E0F3 /* UserDataStoreDiskUserPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90987985288C1C7E0003E0F3 /* UserDataStoreDiskUserPrefs.swift */; };
+		90987988288C267F0003E0F3 /* UserSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90987987288C267F0003E0F3 /* UserSessionModel.swift */; };
+		9098798D288C28CA0003E0F3 /* UserSessionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098798C288C28CA0003E0F3 /* UserSessionDataStore.swift */; };
+		90987992288C2B260003E0F3 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90987991288C2B260003E0F3 /* Keychain.swift */; };
+		90987994288C2B5D0003E0F3 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90987993288C2B5D0003E0F3 /* KeychainItem.swift */; };
+		90987996288C2BB20003E0F3 /* KeychainUserSessionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90987995288C2BB20003E0F3 /* KeychainUserSessionDataStore.swift */; };
+		9098799A288C2C060003E0F3 /* UserSessionCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90987999288C2C060003E0F3 /* UserSessionCoding.swift */; };
+		9098799C288C2C3A0003E0F3 /* UserSessionPropertyListCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098799B288C2C3A0003E0F3 /* UserSessionPropertyListCoder.swift */; };
+		9098799E288C389C0003E0F3 /* GetUserSessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098799D288C389C0003E0F3 /* GetUserSessionRepository.swift */; };
+		909879A0288C3B990003E0F3 /* DeleteUserSessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098799F288C3B990003E0F3 /* DeleteUserSessionRepository.swift */; };
+		909879A2288C3CC40003E0F3 /* SaveUserSessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909879A1288C3CC40003E0F3 /* SaveUserSessionRepository.swift */; };
+		909879A4288C3D3D0003E0F3 /* GetUsersDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909879A3288C3D3D0003E0F3 /* GetUsersDataRepository.swift */; };
+		909879A8288C41BC0003E0F3 /* UpdateUsersDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909879A7288C41BC0003E0F3 /* UpdateUsersDataRepository.swift */; };
+		909879AA288C75450003E0F3 /* UserHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909879A9288C75450003E0F3 /* UserHeaderView.swift */; };
+		909879AC288C7FDB0003E0F3 /* NiblessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909879AB288C7FDB0003E0F3 /* NiblessTableViewCell.swift */; };
+		90A9A4CF288D834C00EB4883 /* TextViewForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A9A4CE288D834C00EB4883 /* TextViewForm.swift */; };
+		90A9A4D1288DCEB000EB4883 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A9A4D0288DCEB000EB4883 /* String+Ext.swift */; };
+		90BFD4C3288CF438005A2FFA /* ImageForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BFD4C2288CF438005A2FFA /* ImageForm.swift */; };
+		90BFD4C5288CF6A1005A2FFA /* SectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BFD4C4288CF6A1005A2FFA /* SectionType.swift */; };
+		90BFD4C7288CF82B005A2FFA /* TextForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BFD4C6288CF82B005A2FFA /* TextForm.swift */; };
+		90BFD4CA288D1296005A2FFA /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BFD4C9288D1296005A2FFA /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9017416A288A2C4F00136B70 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		9017416C288A2CD900136B70 /* GetPostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostRepository.swift; sourceTree = "<group>"; };
+		9017416F288A2D5000136B70 /* PostMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMapper.swift; sourceTree = "<group>"; };
+		90174171288A2D6E00136B70 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		90174174288A300C00136B70 /* UserMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMapper.swift; sourceTree = "<group>"; };
+		90174176288A336500136B70 /* PostsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsMapper.swift; sourceTree = "<group>"; };
+		90174178288A38F800136B70 /* GetPostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsRepository.swift; sourceTree = "<group>"; };
+		9017417D288A3C5700136B70 /* PostPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPagePresenter.swift; sourceTree = "<group>"; };
+		9017417F288A3CA100136B70 /* PostPageContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPageContract.swift; sourceTree = "<group>"; };
+		90174181288A3DAB00136B70 /* PostPageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPageInteractor.swift; sourceTree = "<group>"; };
+		90174183288A427200136B70 /* PostPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPageRouter.swift; sourceTree = "<group>"; };
+		90174188288A492400136B70 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		9017418A288A494800136B70 /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
+		9017418C288A49C800136B70 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
+		9017418E288A4AB700136B70 /* NiblessCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessCollectionViewCell.swift; sourceTree = "<group>"; };
+		90174190288A4B9300136B70 /* PostPageNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPageNavigationController.swift; sourceTree = "<group>"; };
+		90174193288A4D2900136B70 /* PostPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPageViewController.swift; sourceTree = "<group>"; };
+		90174195288A530100136B70 /* PostPageViewRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPageViewRoot.swift; sourceTree = "<group>"; };
+		90174197288A53C400136B70 /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCell.swift; sourceTree = "<group>"; };
 		90630D932889D95800F27884 /* post app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "post app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90630D962889D95800F27884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90630D982889D95800F27884 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		90630D9A2889D95800F27884 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		90630D9D2889D95800F27884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90630D9F2889D95B00F27884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90630DA22889D95B00F27884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90630DA42889D95B00F27884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90630DB32889DE2500F27884 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		90630DB52889DE3100F27884 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		90630DB92889DF5D00F27884 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		90630DBB2889DF6A00F27884 /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
+		90630DBD2889E14100F27884 /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
+		90630DBF2889E2A900F27884 /* PostLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocalDataSource.swift; sourceTree = "<group>"; };
+		90630DC22889E3FD00F27884 /* CustomError+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomError+Ext.swift"; sourceTree = "<group>"; };
+		90630DC42889E51B00F27884 /* Result+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Ext.swift"; sourceTree = "<group>"; };
+		9098796D288AD7820003E0F3 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		9098796F288AECF20003E0F3 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		90987971288B459E0003E0F3 /* PostFormPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFormPagePresenter.swift; sourceTree = "<group>"; };
+		90987973288B45AF0003E0F3 /* PostFormPageContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFormPageContract.swift; sourceTree = "<group>"; };
+		90987975288B45C30003E0F3 /* PostFormPageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFormPageInteractor.swift; sourceTree = "<group>"; };
+		90987977288B45E30003E0F3 /* PostFormPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFormPageRouter.swift; sourceTree = "<group>"; };
+		9098797A288B45F90003E0F3 /* PostFormPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFormPageController.swift; sourceTree = "<group>"; };
+		9098797C288B46090003E0F3 /* PostFormPageViewRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFormPageViewRoot.swift; sourceTree = "<group>"; };
+		9098797E288B4B8E0003E0F3 /* AddPostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostRepository.swift; sourceTree = "<group>"; };
+		90987983288C1B0B0003E0F3 /* UserDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStore.swift; sourceTree = "<group>"; };
+		90987985288C1C7E0003E0F3 /* UserDataStoreDiskUserPrefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStoreDiskUserPrefs.swift; sourceTree = "<group>"; };
+		90987987288C267F0003E0F3 /* UserSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionModel.swift; sourceTree = "<group>"; };
+		9098798C288C28CA0003E0F3 /* UserSessionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionDataStore.swift; sourceTree = "<group>"; };
+		90987991288C2B260003E0F3 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		90987993288C2B5D0003E0F3 /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		90987995288C2BB20003E0F3 /* KeychainUserSessionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainUserSessionDataStore.swift; sourceTree = "<group>"; };
+		90987999288C2C060003E0F3 /* UserSessionCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionCoding.swift; sourceTree = "<group>"; };
+		9098799B288C2C3A0003E0F3 /* UserSessionPropertyListCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionPropertyListCoder.swift; sourceTree = "<group>"; };
+		9098799D288C389C0003E0F3 /* GetUserSessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserSessionRepository.swift; sourceTree = "<group>"; };
+		9098799F288C3B990003E0F3 /* DeleteUserSessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserSessionRepository.swift; sourceTree = "<group>"; };
+		909879A1288C3CC40003E0F3 /* SaveUserSessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserSessionRepository.swift; sourceTree = "<group>"; };
+		909879A3288C3D3D0003E0F3 /* GetUsersDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersDataRepository.swift; sourceTree = "<group>"; };
+		909879A7288C41BC0003E0F3 /* UpdateUsersDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUsersDataRepository.swift; sourceTree = "<group>"; };
+		909879A9288C75450003E0F3 /* UserHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderView.swift; sourceTree = "<group>"; };
+		909879AB288C7FDB0003E0F3 /* NiblessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessTableViewCell.swift; sourceTree = "<group>"; };
+		90A9A4CE288D834C00EB4883 /* TextViewForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewForm.swift; sourceTree = "<group>"; };
+		90A9A4D0288DCEB000EB4883 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		90BFD4C2288CF438005A2FFA /* ImageForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageForm.swift; sourceTree = "<group>"; };
+		90BFD4C4288CF6A1005A2FFA /* SectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType.swift; sourceTree = "<group>"; };
+		90BFD4C6288CF82B005A2FFA /* TextForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextForm.swift; sourceTree = "<group>"; };
+		90BFD4C9288D1296005A2FFA /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +142,98 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90630DAF2889DC1D00F27884 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9017416E288A2D2E00136B70 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				9017416F288A2D5000136B70 /* PostMapper.swift */,
+				90174171288A2D6E00136B70 /* Mapper.swift */,
+				90174174288A300C00136B70 /* UserMapper.swift */,
+				90174176288A336500136B70 /* PostsMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		9017417A288A3B1F00136B70 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9017417C288A3B6000136B70 /* Post Form Page */,
+				9017417B288A3B3D00136B70 /* Post Page */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9017417B288A3B3D00136B70 /* Post Page */ = {
+			isa = PBXGroup;
+			children = (
+				90174192288A4D0100136B70 /* View */,
+				9017417D288A3C5700136B70 /* PostPagePresenter.swift */,
+				9017417F288A3CA100136B70 /* PostPageContract.swift */,
+				90174181288A3DAB00136B70 /* PostPageInteractor.swift */,
+				90174183288A427200136B70 /* PostPageRouter.swift */,
+			);
+			path = "Post Page";
+			sourceTree = "<group>";
+		};
+		9017417C288A3B6000136B70 /* Post Form Page */ = {
+			isa = PBXGroup;
+			children = (
+				90987979288B45E70003E0F3 /* View */,
+				90987971288B459E0003E0F3 /* PostFormPagePresenter.swift */,
+				90987973288B45AF0003E0F3 /* PostFormPageContract.swift */,
+				90987975288B45C30003E0F3 /* PostFormPageInteractor.swift */,
+				90987977288B45E30003E0F3 /* PostFormPageRouter.swift */,
+			);
+			path = "Post Form Page";
+			sourceTree = "<group>";
+		};
+		90174185288A48E500136B70 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				90174186288A48F400136B70 /* UIKit */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		90174186288A48F400136B70 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				90174187288A490900136B70 /* NiblessComponent */,
+				90A9A4CE288D834C00EB4883 /* TextViewForm.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		90174187288A490900136B70 /* NiblessComponent */ = {
+			isa = PBXGroup;
+			children = (
+				90174188288A492400136B70 /* NiblessViewController.swift */,
+				9017418A288A494800136B70 /* NiblessView.swift */,
+				9017418C288A49C800136B70 /* NiblessNavigationController.swift */,
+				9017418E288A4AB700136B70 /* NiblessCollectionViewCell.swift */,
+				909879AB288C7FDB0003E0F3 /* NiblessTableViewCell.swift */,
+			);
+			path = NiblessComponent;
+			sourceTree = "<group>";
+		};
+		90174192288A4D0100136B70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90174190288A4B9300136B70 /* PostPageNavigationController.swift */,
+				90174193288A4D2900136B70 /* PostPageViewController.swift */,
+				90174195288A530100136B70 /* PostPageViewRoot.swift */,
+				90174197288A53C400136B70 /* PostViewCell.swift */,
+				909879A9288C75450003E0F3 /* UserHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		90630D8A2889D95800F27884 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +253,169 @@
 		90630D952889D95800F27884 /* post app */ = {
 			isa = PBXGroup;
 			children = (
+				90BFD4C8288D128B005A2FFA /* Util */,
+				9098796C288AD7730003E0F3 /* DI */,
+				90174185288A48E500136B70 /* Reusable */,
+				9017417A288A3B1F00136B70 /* Modules */,
+				9017416E288A2D2E00136B70 /* Mapper */,
+				90630DC12889E3E000F27884 /* Extension */,
+				90630DB02889DD8C00F27884 /* Data */,
 				90630D962889D95800F27884 /* AppDelegate.swift */,
-				90630D982889D95800F27884 /* SceneDelegate.swift */,
-				90630D9A2889D95800F27884 /* ViewController.swift */,
-				90630D9C2889D95800F27884 /* Main.storyboard */,
 				90630D9F2889D95B00F27884 /* Assets.xcassets */,
 				90630DA12889D95B00F27884 /* LaunchScreen.storyboard */,
 				90630DA42889D95B00F27884 /* Info.plist */,
+				9098796F288AECF20003E0F3 /* RootRouter.swift */,
 			);
 			path = "post app";
+			sourceTree = "<group>";
+		};
+		90630DB02889DD8C00F27884 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				90630DB22889DDC400F27884 /* Repositories */,
+				90630DB12889DDB800F27884 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		90630DB12889DDB800F27884 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90630DB32889DE2500F27884 /* UserModel.swift */,
+				90630DB52889DE3100F27884 /* PostModel.swift */,
+				90987987288C267F0003E0F3 /* UserSessionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		90630DB22889DDC400F27884 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				90987997288C2BEA0003E0F3 /* Coding */,
+				90630DB72889DF0F00F27884 /* Persistence */,
+				9017416A288A2C4F00136B70 /* Repository.swift */,
+				9017416C288A2CD900136B70 /* GetPostRepository.swift */,
+				90174178288A38F800136B70 /* GetPostsRepository.swift */,
+				9098797E288B4B8E0003E0F3 /* AddPostRepository.swift */,
+				9098799D288C389C0003E0F3 /* GetUserSessionRepository.swift */,
+				9098799F288C3B990003E0F3 /* DeleteUserSessionRepository.swift */,
+				909879A1288C3CC40003E0F3 /* SaveUserSessionRepository.swift */,
+				909879A3288C3D3D0003E0F3 /* GetUsersDataRepository.swift */,
+				909879A7288C41BC0003E0F3 /* UpdateUsersDataRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		90630DB72889DF0F00F27884 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				9098798B288C28980003E0F3 /* UserSessionStore */,
+				90987982288C17FD0003E0F3 /* UserStore */,
+				90987980288C17D20003E0F3 /* PostsStore */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		90630DB82889DF3E00F27884 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				90630DB92889DF5D00F27884 /* UserEntity.swift */,
+				90630DBB2889DF6A00F27884 /* PostEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		90630DC12889E3E000F27884 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				90630DC22889E3FD00F27884 /* CustomError+Ext.swift */,
+				90630DC42889E51B00F27884 /* Result+Ext.swift */,
+				90A9A4D0288DCEB000EB4883 /* String+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9098796C288AD7730003E0F3 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				9098796D288AD7820003E0F3 /* Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		90987979288B45E70003E0F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9098797A288B45F90003E0F3 /* PostFormPageController.swift */,
+				9098797C288B46090003E0F3 /* PostFormPageViewRoot.swift */,
+				90BFD4C2288CF438005A2FFA /* ImageForm.swift */,
+				90BFD4C4288CF6A1005A2FFA /* SectionType.swift */,
+				90BFD4C6288CF82B005A2FFA /* TextForm.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90987980288C17D20003E0F3 /* PostsStore */ = {
+			isa = PBXGroup;
+			children = (
+				90630DB82889DF3E00F27884 /* Entity */,
+				90630DBD2889E14100F27884 /* LocalDataSource.swift */,
+				90630DBF2889E2A900F27884 /* PostLocalDataSource.swift */,
+			);
+			path = PostsStore;
+			sourceTree = "<group>";
+		};
+		90987982288C17FD0003E0F3 /* UserStore */ = {
+			isa = PBXGroup;
+			children = (
+				90987983288C1B0B0003E0F3 /* UserDataStore.swift */,
+				90987985288C1C7E0003E0F3 /* UserDataStoreDiskUserPrefs.swift */,
+			);
+			path = UserStore;
+			sourceTree = "<group>";
+		};
+		9098798B288C28980003E0F3 /* UserSessionStore */ = {
+			isa = PBXGroup;
+			children = (
+				90987990288C2B190003E0F3 /* Keychain */,
+				9098798C288C28CA0003E0F3 /* UserSessionDataStore.swift */,
+			);
+			path = UserSessionStore;
+			sourceTree = "<group>";
+		};
+		90987990288C2B190003E0F3 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				90987991288C2B260003E0F3 /* Keychain.swift */,
+				90987993288C2B5D0003E0F3 /* KeychainItem.swift */,
+				90987995288C2BB20003E0F3 /* KeychainUserSessionDataStore.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		90987997288C2BEA0003E0F3 /* Coding */ = {
+			isa = PBXGroup;
+			children = (
+				90987998288C2BF50003E0F3 /* UserSession */,
+			);
+			path = Coding;
+			sourceTree = "<group>";
+		};
+		90987998288C2BF50003E0F3 /* UserSession */ = {
+			isa = PBXGroup;
+			children = (
+				90987999288C2C060003E0F3 /* UserSessionCoding.swift */,
+				9098799B288C2C3A0003E0F3 /* UserSessionPropertyListCoder.swift */,
+			);
+			path = UserSession;
+			sourceTree = "<group>";
+		};
+		90BFD4C8288D128B005A2FFA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				90BFD4C9288D1296005A2FFA /* Functions.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +434,9 @@
 			dependencies = (
 			);
 			name = "post app";
+			packageProductDependencies = (
+				90630DAE2889DC1D00F27884 /* RealmSwift */,
+			);
 			productName = "post app";
 			productReference = 90630D932889D95800F27884 /* post app.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +465,9 @@
 				Base,
 			);
 			mainGroup = 90630D8A2889D95800F27884;
+			packageReferences = (
+				90630DAD2889DC1D00F27884 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 90630D942889D95800F27884 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +484,6 @@
 			files = (
 				90630DA32889D95B00F27884 /* LaunchScreen.storyboard in Resources */,
 				90630DA02889D95B00F27884 /* Assets.xcassets in Resources */,
-				90630D9E2889D95800F27884 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +494,71 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90630D9B2889D95800F27884 /* ViewController.swift in Sources */,
+				90174177288A336500136B70 /* PostsMapper.swift in Sources */,
+				90630DB42889DE2500F27884 /* UserModel.swift in Sources */,
+				90BFD4C7288CF82B005A2FFA /* TextForm.swift in Sources */,
+				9098797B288B45F90003E0F3 /* PostFormPageController.swift in Sources */,
+				90174196288A530100136B70 /* PostPageViewRoot.swift in Sources */,
+				90630DC32889E3FD00F27884 /* CustomError+Ext.swift in Sources */,
+				909879A8288C41BC0003E0F3 /* UpdateUsersDataRepository.swift in Sources */,
+				90987988288C267F0003E0F3 /* UserSessionModel.swift in Sources */,
+				909879A0288C3B990003E0F3 /* DeleteUserSessionRepository.swift in Sources */,
+				90630DC02889E2A900F27884 /* PostLocalDataSource.swift in Sources */,
+				90630DBA2889DF5D00F27884 /* UserEntity.swift in Sources */,
+				909879AC288C7FDB0003E0F3 /* NiblessTableViewCell.swift in Sources */,
+				9017418D288A49C800136B70 /* NiblessNavigationController.swift in Sources */,
+				90174172288A2D6E00136B70 /* Mapper.swift in Sources */,
+				90174180288A3CA100136B70 /* PostPageContract.swift in Sources */,
+				90630DC52889E51B00F27884 /* Result+Ext.swift in Sources */,
+				909879AA288C75450003E0F3 /* UserHeaderView.swift in Sources */,
+				9098799E288C389C0003E0F3 /* GetUserSessionRepository.swift in Sources */,
+				90987976288B45C30003E0F3 /* PostFormPageInteractor.swift in Sources */,
+				90987974288B45AF0003E0F3 /* PostFormPageContract.swift in Sources */,
+				9017416D288A2CD900136B70 /* GetPostRepository.swift in Sources */,
+				90174170288A2D5000136B70 /* PostMapper.swift in Sources */,
+				909879A4288C3D3D0003E0F3 /* GetUsersDataRepository.swift in Sources */,
+				90174182288A3DAB00136B70 /* PostPageInteractor.swift in Sources */,
+				9098796E288AD7820003E0F3 /* Injection.swift in Sources */,
+				90174194288A4D2900136B70 /* PostPageViewController.swift in Sources */,
+				90987994288C2B5D0003E0F3 /* KeychainItem.swift in Sources */,
+				90A9A4CF288D834C00EB4883 /* TextViewForm.swift in Sources */,
+				90987972288B459E0003E0F3 /* PostFormPagePresenter.swift in Sources */,
+				9098798D288C28CA0003E0F3 /* UserSessionDataStore.swift in Sources */,
+				9098799A288C2C060003E0F3 /* UserSessionCoding.swift in Sources */,
+				90630DBC2889DF6A00F27884 /* PostEntity.swift in Sources */,
 				90630D972889D95800F27884 /* AppDelegate.swift in Sources */,
-				90630D992889D95800F27884 /* SceneDelegate.swift in Sources */,
+				90987970288AECF20003E0F3 /* RootRouter.swift in Sources */,
+				9098799C288C2C3A0003E0F3 /* UserSessionPropertyListCoder.swift in Sources */,
+				9098797F288B4B8E0003E0F3 /* AddPostRepository.swift in Sources */,
+				90987978288B45E30003E0F3 /* PostFormPageRouter.swift in Sources */,
+				9017418B288A494800136B70 /* NiblessView.swift in Sources */,
+				90BFD4C5288CF6A1005A2FFA /* SectionType.swift in Sources */,
+				9017417E288A3C5700136B70 /* PostPagePresenter.swift in Sources */,
+				90BFD4C3288CF438005A2FFA /* ImageForm.swift in Sources */,
+				909879A2288C3CC40003E0F3 /* SaveUserSessionRepository.swift in Sources */,
+				90630DBE2889E14100F27884 /* LocalDataSource.swift in Sources */,
+				90174184288A427200136B70 /* PostPageRouter.swift in Sources */,
+				90630DB62889DE3100F27884 /* PostModel.swift in Sources */,
+				9017418F288A4AB700136B70 /* NiblessCollectionViewCell.swift in Sources */,
+				9017416B288A2C4F00136B70 /* Repository.swift in Sources */,
+				90174191288A4B9300136B70 /* PostPageNavigationController.swift in Sources */,
+				90987996288C2BB20003E0F3 /* KeychainUserSessionDataStore.swift in Sources */,
+				9098797D288B46090003E0F3 /* PostFormPageViewRoot.swift in Sources */,
+				90987986288C1C7E0003E0F3 /* UserDataStoreDiskUserPrefs.swift in Sources */,
+				90174179288A38F800136B70 /* GetPostsRepository.swift in Sources */,
+				90174175288A300C00136B70 /* UserMapper.swift in Sources */,
+				90BFD4CA288D1296005A2FFA /* Functions.swift in Sources */,
+				90174198288A53C400136B70 /* PostViewCell.swift in Sources */,
+				90A9A4D1288DCEB000EB4883 /* String+Ext.swift in Sources */,
+				90987984288C1B0B0003E0F3 /* UserDataStore.swift in Sources */,
+				90174189288A492400136B70 /* NiblessViewController.swift in Sources */,
+				90987992288C2B260003E0F3 /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		90630D9C2889D95800F27884 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				90630D9D2889D95800F27884 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		90630DA12889D95B00F27884 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,9 +694,11 @@
 				DEVELOPMENT_TEAM = L26CH9J4A9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "post app/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Post App";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access to add image from capture";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Add photos to post";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,9 +724,11 @@
 				DEVELOPMENT_TEAM = L26CH9J4A9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "post app/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Post App";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access to add image from capture";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Add photos to post";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +766,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90630DAD2889DC1D00F27884 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90630DAE2889DC1D00F27884 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90630DAD2889DC1D00F27884 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90630D8B2889D95800F27884 /* Project object */;
 }
